@@ -8,14 +8,17 @@
     "cdk": "bin/cdk.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -b",
     "watch": "tsc -w",
     "test": "jest",
     "lint": "yarn eslint && yarn prettier",
     "eslint": "eslint --fix './**/*.{ts,tsx}'",
     "prettier": "prettier --write './**/*.{ts,tsx,js,jsx,json,md,html}'",
     "cdk": "cdk",
-    "cdk-bootstrap": "cdk bootstrap"
+    "cdk:bootstrap": "cdk bootstrap",
+    "cdk:synth": "cdk synth",
+    "cdk:deploy": "cdk deploy",
+    "cdk:diff": "cdk diff"
   },
   "devDependencies": {
     "@types/jest": "29.5.1",

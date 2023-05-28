@@ -3,6 +3,8 @@
 *.d.ts
 node_modules
 npm-packages-offline-cache
+build
+coverage
 
 # CDK asset staging directory
 .cdk.staging
